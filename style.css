@@ -10,7 +10,7 @@
 
 body {
   height: 100vh;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 /* Header section */
@@ -67,5 +67,5 @@ header {
 }
 
 .color-dark-blue {
-  color: #172B4d;
+  color: #172b4d;
 }
