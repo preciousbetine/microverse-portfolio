@@ -25,6 +25,7 @@ header {
 #logo {
   font-size: 18px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 /* Intro section */
@@ -50,13 +51,15 @@ header {
   line-height: 24px;
 }
 
-#social-media-div {
+#social-media {
   display: flex;
+  align-items: center;
   gap: 20px;
   margin-bottom: 50px;
+  list-style: none;
 }
 
-#social-media-div img {
+#social-media > li > img {
   width: 25px;
 }
 
