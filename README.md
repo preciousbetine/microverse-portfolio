@@ -68,8 +68,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-> A Header section
-> An Intro section
+- A Header section
+- An Intro section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
