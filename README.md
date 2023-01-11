@@ -34,7 +34,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse! <a name="about-project"></a>
+# Microverse Portfolio Project <a name="about-project"></a>
 
 > A simple web portfolio built from one of Microverse's templates.
 
