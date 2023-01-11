@@ -152,7 +152,7 @@ Example command:
 
 ### Deployment
 
-No deployment made.
+No deployments made.
 
 <!--
 Example:
@@ -173,7 +173,7 @@ Example:
 👤 **Precious Betine**
 
 - GitHub: [@preciousbetine](https://github.com/preciousbetine)
-- Twitter: [@preciousbetin](https://twitter.com/preciousbetin)
+- Twitter: [@preciousbetin](https://twitter.com/preciousbetine)
 - LinkedIn: [preciousbetine](https://linkedin.com/in/preciousbetine)
 <!-- 
 👤 **Author2**
@@ -216,7 +216,7 @@ If you like this project, give it a ⭐
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-ACKNOWLEDGEMENTS
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
