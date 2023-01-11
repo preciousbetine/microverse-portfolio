@@ -20,16 +20,16 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-<!--   - [Install](#install) -->
+  - [Install](#install)
   - [Usage](#usage)
-<!--   - [Run tests](#run-tests) -->
-<!--   - [Deployment](#triangular_flag_on_post-deployment) -->
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-<!-- - [🔭 Future Features](#future-features) -->
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-<!-- - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq) -->
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -112,10 +112,10 @@ Clone this repository to your desired folder:
   git clone https://github.com/preciousbetine/microverse-portfolio.git
 ```
 
-<!-- 
+
 ### Install
 
-Install this project with: -->
+No Installation required!
 
 <!--
 Example command:
@@ -124,7 +124,7 @@ Example command:
   cd my-project
   gem install
 ```
---->
+-
 
 ### Usage
 
@@ -137,11 +137,11 @@ Example command:
   rails server
 ```
 --->
-<!-- 
+
 ### Run tests
 
-To run tests, run the following command:
- -->
+There are no tests available to run.
+
 <!--
 Example command:
 
@@ -149,10 +149,10 @@ Example command:
   bin/rails test test/models/article_test.rb
 ```
 --->
-<!-- 
+
 ### Deployment
 
-You can deploy this project using: -->
+No deployment made.
 
 <!--
 Example:
@@ -184,17 +184,17 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-<!-- 
+FUTURE FEATURES
+
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+<!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
- -->
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+- [ ] **More descriptive sections**
+- [ ] **Responsive desktop version**
+<!-- - [ ] **[new_feature_3]** -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -216,31 +216,34 @@ If you like this project, give it a ⭐
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+ACKNOWLEDGEMENTS
 
-<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a> -->
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 <!-- > Give credit to everyone who inspired your codebase. -->
 
+No acknowledgements. 🙂
 <!-- I would like to thank... -->
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-<!-- 
+
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+<!-- > Add at least 2 questions new developers would ask when they decide to use your project. -->
 
-- **[Question_1]**
+- No FAQ
+
+<!-- - **[Question_1]**
 
   - [Answer_1]
 
 - **[Question_2]**
 
-  - [Answer_2]
- -->
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+  - [Answer_2] -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
