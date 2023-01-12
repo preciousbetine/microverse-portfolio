@@ -89,8 +89,15 @@ header {
 .work-item-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
   font-size: 13px;
+}
+
+.work-item-bar > ul {
+  color: gray;
+  font-size: 16px;
+  display: flex;
+  gap: 25px;
 }
 
 .card > p {
@@ -101,6 +108,7 @@ header {
 .stackbar {
   display: flex;
   gap: 15px;
+  list-style-type: none;
 }
 
 .stackbar-item {
