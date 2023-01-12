@@ -63,6 +63,64 @@ header {
   width: 25px;
 }
 
+/* Work Section */
+
+#work-section {
+  padding: 150px 20px 100px 20px;
+  display: grid;
+  gap: 100px;
+  background-color: #e5e5e5;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card > h3 {
+  font-size: 32px;
+}
+
+.work-item-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.card > p {
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.stackbar {
+  display: flex;
+  gap: 15px;
+}
+
+.stackbar-item {
+  padding: 4px 12px;
+  background: #ebebff;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+.card > button {
+  width: max-content;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #6070ff;
+  background-color: #fff;
+  padding: 12px;
+  font-size: 17px;
+
+}
+
 /* General */
 
 .color-blue {
@@ -71,4 +129,20 @@ header {
 
 .color-dark-blue {
   color: #172b4d;
+}
+
+.color-dark {
+  color: #344563;
+}
+
+.color-gray {
+  color: #7a869a;
+}
+
+.dot {
+  background-color: #7a869a;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
 }
