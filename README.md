@@ -70,6 +70,8 @@
 
 - A Header section
 - An Intro section
+- A Works section
+- An About section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,7 +175,7 @@ Example:
 👤 **Precious Betine**
 
 - GitHub: [@preciousbetine](https://github.com/preciousbetine)
-- Twitter: [@preciousbetin](https://twitter.com/preciousbetine)
+- Twitter: [@preciousbetine](https://twitter.com/preciousbetine)
 - LinkedIn: [preciousbetine](https://linkedin.com/in/preciousbetine)
 <!-- 
 👤 **Author2**
@@ -190,7 +192,6 @@ Example:
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **More descriptive sections**
 - [ ] **Responsive desktop version**
 <!-- - [ ] **[new_feature_3]** -->
 
