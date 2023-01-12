@@ -46,7 +46,7 @@ header {
   line-height: 52px;
 }
 
-#intro-section p {
+#intro-section > p {
   font-size: 16px;
   line-height: 24px;
 }
@@ -150,7 +150,8 @@ header {
   border-radius: 8px;
 }
 
-#frameworks-header, #skills-header {
+#frameworks-header,
+#skills-header {
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
