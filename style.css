@@ -28,29 +28,6 @@ header {
   text-decoration: none;
 }
 
-/* Intro section */
-#intro-section {
-  background-image: url(/images/header-bg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: calc(100vh - 100px);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-
-#intro-section h1 {
-  font-size: 40px;
-  line-height: 52px;
-}
-
-#intro-section > p {
-  font-size: 16px;
-  line-height: 24px;
-}
-
 /* Work Section */
 
 #work-section {
@@ -104,6 +81,29 @@ header {
   background: #ebebff;
   color: #6070ff;
   border-radius: 8px;
+}
+
+/* Intro section */
+#intro-section {
+  background-image: url(/images/header-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#intro-section h1 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+#intro-section > p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* About Section */
