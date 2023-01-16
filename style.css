@@ -71,8 +71,6 @@ header {
 }
 
 .stackbar {
-  display: flex;
-  gap: 15px;
   list-style-type: none;
 }
 
@@ -81,6 +79,8 @@ header {
   background: #ebebff;
   color: #6070ff;
   border-radius: 8px;
+  float: left;
+  margin-right: 15px;
 }
 
 /* Intro section */
