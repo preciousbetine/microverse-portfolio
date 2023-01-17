@@ -211,8 +211,19 @@ header {
   line-height: 24px;
   padding: 15px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #6070ff;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+#contact-form button:hover {
+  background: #6070ff;
+  color: #fff;
+  border: 1px solid white;
+}
+
+#contact-form button:focus {
+  background: #2230d2;
+  color: #fff;
 }
 
 /* General */
