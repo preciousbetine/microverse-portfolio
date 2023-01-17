@@ -171,7 +171,6 @@ header {
 }
 
 #contact-section h2 {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -180,7 +179,6 @@ header {
 }
 
 #contact-section p {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -207,7 +205,6 @@ header {
 
 #contact-form button {
   color: #6070ff;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -215,6 +212,7 @@ header {
   padding: 15px;
   border-radius: 10px;
   border: none;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 /* General */
