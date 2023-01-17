@@ -247,3 +247,29 @@ h4 {
   text-align: center;
   color: #fff;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+#contact-btn {
+  color: #6070FF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
