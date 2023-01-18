@@ -130,7 +130,6 @@ header {
 #about-section {
   padding: 100px 20px 200px 20px;
   display: flex;
-  display: flex;
   flex-direction: column;
   gap: 30px;
   background-color: #fff;
@@ -316,12 +315,6 @@ h4 {
 }
 
 /* Desktop Version */
-/* 
-***************
-*******************
-***********************
-**************************
-*/
 
 @media (min-width: 768px) {
   /* Header section */
@@ -346,7 +339,7 @@ h4 {
 
   .nav-link:hover {
     color: #6070ff;
-  }  
+  }
 
   /* Intro section */
   #intro-section {
