@@ -18,8 +18,8 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
@@ -121,14 +121,14 @@ Clone this repository to your desired folder:
 
 No Installation required!
 
-<!--
-Example command:
+
+<!-- Example command:
 
 ```sh
   cd my-project
   gem install
 ```
--
+- -->
 
 ### Usage
 
@@ -140,7 +140,7 @@ Example command:
 ```sh
   rails server
 ```
---->
+-
 
 ### Run tests
 
