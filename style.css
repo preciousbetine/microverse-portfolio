@@ -86,7 +86,7 @@ header {
 /* Intro section */
 #intro-section {
   background-image: url(/images/header-bg.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 100px);
   padding: 20px;
@@ -282,4 +282,24 @@ h4 {
 
 .social-media > li > img {
   width: 25px;
+}
+
+/* Desktop Version */
+/* 
+***************
+*******************
+***********************
+**************************
+*/
+
+@media (min-width: 768px) {
+  header {
+    padding: 0 10%;
+  }
+
+  #intro-section {
+    background-image: url(/images/desktop-header-bg.png);
+    background-size: contain;
+    padding: 0 20%;
+  }
 }
