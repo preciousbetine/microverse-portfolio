@@ -130,12 +130,19 @@ header {
 #about-section {
   padding: 100px 20px 200px 20px;
   display: flex;
+  display: flex;
   flex-direction: column;
   gap: 30px;
   background-color: #fff;
 }
 
-#about-section > h2 {
+.about-myself {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-myself > h2 {
   font-size: 40px;
   line-height: 40px;
 }
@@ -288,6 +295,7 @@ h4 {
   background-color: #fff;
   padding: 12px;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .button-style-1:hover {
@@ -403,6 +411,26 @@ h4 {
   /* About section */
   #about-section {
     border-top-right-radius: 120px;
+    flex-direction: row;
+    padding: 100px 80px 200px 80px;
+  }
+
+  .about-myself {
+    width: 40%;
+  }
+
+  .language-container {
+    width: 60%;
+  }
+
+  #languages {
+    flex-direction: row;
+  }
+
+  #languages li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 50px;
   }
 
   /* Buttons */
