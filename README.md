@@ -73,6 +73,7 @@
 - A Works section
 - An About section
 - A Contact section
+- Responsive Mobile and Desktop Versions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,7 +182,7 @@ Example:
 
 👤 **Yosef Geda**
 
-- GitHub: [@githubhandle](https://github.com/yosefgeda)
+- GitHub: [@yosefgeda](https://github.com/yosefgeda)
 <!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
