@@ -24,6 +24,10 @@ header {
   background-color: #fff;
 }
 
+.nav-link {
+  display: none;
+}
+
 #logo {
   font-size: 18px;
   font-weight: 700;
@@ -308,6 +312,25 @@ h4 {
   header {
     padding: 0 10%;
   }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-link:hover {
+    color: #6070ff;
+  }  
 
   /* Intro section */
   #intro-section {
