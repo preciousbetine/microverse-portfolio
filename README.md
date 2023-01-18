@@ -72,6 +72,7 @@
 - An Intro section
 - A Works section
 - An About section
+- A Contact section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,11 +178,11 @@ Example:
 - GitHub: [@preciousbetine](https://github.com/preciousbetine)
 - Twitter: [@preciousbetine](https://twitter.com/preciousbetine)
 - LinkedIn: [preciousbetine](https://linkedin.com/in/preciousbetine)
-<!-- 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+👤 **Yosef Geda**
+
+- GitHub: [@githubhandle](https://github.com/yosefgeda)
+<!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
