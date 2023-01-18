@@ -53,6 +53,10 @@ header {
   gap: 20px;
 }
 
+.card img {
+  width: 100%;
+}
+
 .card-description {
   display: flex;
   flex-direction: column;
@@ -84,6 +88,9 @@ header {
 
 .stackbar {
   list-style-type: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .stackbar-item {
@@ -92,7 +99,7 @@ header {
   color: #6070ff;
   border-radius: 8px;
   float: left;
-  margin-right: 15px;
+  height: max-content;
 }
 
 /* Intro section */
@@ -335,7 +342,7 @@ h4 {
   /* Intro section */
   #intro-section {
     background-image: url(/images/desktop-header-bg.png);
-    background-size: contain;
+    background-size: cover;
     padding: 0 20%;
     border-bottom-left-radius: 120px;
   }
@@ -349,20 +356,48 @@ h4 {
 
   .card {
     flex-direction: row;
-    width: 80%
+    width: 700px;
+    gap: 30px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: #6070ff;
+  }
+
+  .card:hover .card-description > button {
+    background-color: #6070ff;
+    color: #fff;
   }
 
   .card img {
-    width: 70%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
   }
 
   .card-description {
     justify-content: center;
+    gap: 15px;
+  }
+
+  .card-description > h3 {
+    font-size: 24px;
+  }
+
+  .card-description > p {
+    line-height: 20px;
+    font-size: 14px;
   }
 
   .card:nth-child(2), .card:nth-child(4) {
     flex-direction: row-reverse;
+  }
+
+  .stackbar-item {
+    font-size: 12px;
   }
 
   /* About section */
@@ -370,4 +405,9 @@ h4 {
     border-top-right-radius: 120px;
   }
 
+  /* Buttons */
+  .button-style-1 {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
 }
