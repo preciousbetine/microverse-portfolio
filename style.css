@@ -273,6 +273,7 @@ h4 {
   padding: 12px;
   font-size: 17px;
   cursor: pointer;
+  transition: 0.5s all;
 }
 
 .button-style-1:hover {
