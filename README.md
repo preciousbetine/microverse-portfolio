@@ -18,8 +18,8 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
@@ -73,6 +73,7 @@
 - A Works section
 - An About section
 - A Contact section
+- Responsive Mobile and Desktop Versions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,14 +121,14 @@ Clone this repository to your desired folder:
 
 No Installation required!
 
-<!--
-Example command:
+
+<!-- Example command:
 
 ```sh
   cd my-project
   gem install
 ```
--
+- -->
 
 ### Usage
 
@@ -139,7 +140,7 @@ Example command:
 ```sh
   rails server
 ```
---->
+-
 
 ### Run tests
 
@@ -181,7 +182,7 @@ Example:
 
 👤 **Yosef Geda**
 
-- GitHub: [@githubhandle](https://github.com/yosefgeda)
+- GitHub: [@yosefgeda](https://github.com/yosefgeda)
 <!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 

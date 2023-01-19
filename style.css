@@ -11,6 +11,7 @@
 body {
   height: 100vh;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #e5e5e5;
 }
 
 /* Header section */
@@ -20,6 +21,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+}
+
+.nav-link {
+  display: none;
 }
 
 #logo {
@@ -31,7 +37,7 @@ header {
 /* Work Section */
 
 #work-section {
-  padding: 150px 20px 100px 20px;
+  padding: 150px 20px;
   display: grid;
   gap: 100px;
   background-color: #e5e5e5;
@@ -47,8 +53,23 @@ header {
   gap: 20px;
 }
 
-.card > h3 {
+.card img {
+  width: 100%;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-description > h3 {
   font-size: 32px;
+}
+
+.card-description > p {
+  line-height: 24px;
+  font-size: 18px;
 }
 
 .work-item-bar {
@@ -65,13 +86,11 @@ header {
   gap: 25px;
 }
 
-.card > p {
-  line-height: 24px;
-  font-size: 18px;
-}
-
 .stackbar {
   list-style-type: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .stackbar-item {
@@ -80,14 +99,15 @@ header {
   color: #6070ff;
   border-radius: 8px;
   float: left;
-  margin-right: 15px;
+  height: max-content;
 }
 
 /* Intro section */
 #intro-section {
   background-image: url(/images/header-bg.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #fff;
   height: calc(100vh - 100px);
   padding: 20px;
   display: flex;
@@ -108,13 +128,20 @@ header {
 
 /* About Section */
 #about-section {
-  padding: 100px 20px;
+  padding: 100px 20px 200px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #fff;
+}
+
+.about-myself {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-#about-section > h2 {
+.about-myself > h2 {
   font-size: 40px;
   line-height: 40px;
 }
@@ -162,12 +189,14 @@ header {
 /* Contact Section */
 #contact-section {
   background-color: #6070ff;
+  background-image: url(images/contact-form-mobile-bg.png);
   padding: 100px 20px 20px 20px;
   border-top-left-radius: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-top: -100px;
 }
 
 #contact-section h2 {
@@ -184,7 +213,7 @@ header {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #fff;
+  color: #e0dcdc;
 }
 
 #contact-form {
@@ -201,29 +230,6 @@ header {
   padding: 15px;
   border-radius: 10px;
   border: none;
-}
-
-#contact-form button {
-  color: #6070ff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #6070ff;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-}
-
-#contact-form button:hover {
-  background: #6070ff;
-  color: #fff;
-  border: 1px solid white;
-}
-
-#contact-form button:focus {
-  background: #2230d2;
-  color: #fff;
 }
 
 /* General */
@@ -266,10 +272,34 @@ h4 {
   background-color: #fff;
   padding: 12px;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .button-style-1:hover {
   background-color: #6070ff;
+  color: #fff;
+}
+
+.button-style-2 {
+  color: #6070ff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #6070ff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.button-style-2:hover {
+  background: #6070ff;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.button-style-2:focus {
+  background: #2230d2;
   color: #fff;
 }
 
@@ -282,4 +312,140 @@ h4 {
 
 .social-media > li > img {
   width: 25px;
+}
+
+/* Desktop Version */
+
+@media (min-width: 768px) {
+  /* Header section */
+  header {
+    padding: 0 10%;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-link:hover {
+    color: #6070ff;
+  }
+
+  /* Intro section */
+  #intro-section {
+    background-image: url(/images/desktop-header-bg.png);
+    background-size: cover;
+    padding: 0 20%;
+    border-bottom-left-radius: 120px;
+  }
+
+  /* Work section */
+  #work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex-direction: row;
+    width: 700px;
+    gap: 30px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: #6070ff;
+  }
+
+  .card:hover .card-description > button {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .card img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .card-description {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .card-description > h3 {
+    font-size: 24px;
+  }
+
+  .card-description > p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .stackbar-item {
+    font-size: 12px;
+  }
+
+  /* About section */
+  #about-section {
+    border-top-right-radius: 120px;
+    flex-direction: row;
+    padding: 100px 80px 200px 80px;
+  }
+
+  .about-myself {
+    width: 40%;
+  }
+
+  .language-container {
+    width: 60%;
+  }
+
+  #languages {
+    flex-direction: row;
+  }
+
+  #languages li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 50px;
+  }
+
+  /* Contact Section */
+  #contact-section {
+    padding: 100px 20px;
+    background-image: url(images/contact-section-bg.png);
+    background-size: cover;
+  }
+
+  #contact-section p {
+    width: 600px;
+  }
+
+  #contact-form {
+    width: 500px;
+    align-items: center;
+  }
+
+  /* Components and Buttons */
+  .button-style-1 {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
 }
