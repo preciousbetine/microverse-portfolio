@@ -193,8 +193,8 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
-
-- [ ] **Responsive desktop version**
+None
+<!-- - [ ] **Responsive desktop version** -->
 <!-- - [ ] **[new_feature_3]** -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
