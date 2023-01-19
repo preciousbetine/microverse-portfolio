@@ -193,7 +193,7 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
-None
+None for now 🙂
 <!-- - [ ] **Responsive desktop version** -->
 <!-- - [ ] **[new_feature_3]** -->
 
