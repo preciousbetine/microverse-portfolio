@@ -40,6 +40,7 @@ header {
   from {
     transform: rotate3d(0);
   }
+
   to {
     transform: rotate3d(0, 1, 0, 360deg);
   }
@@ -67,6 +68,10 @@ header {
 .card img {
   width: 100%;
   transition: 0.5s all;
+}
+
+.social-media > li > img {
+  width: 25px;
 }
 
 .card:hover img {
@@ -332,10 +337,6 @@ h4 {
   align-items: center;
   gap: 20px;
   list-style: none;
-}
-
-.social-media > li > img {
-  width: 25px;
 }
 
 /* Desktop Version */
