@@ -155,8 +155,7 @@ Example command:
 --->
 
 ### Deployment
-
-No deployments made.
+  This website is live at [this link](https://preciousbetine.github.io/microverse-portfolio)
 
 <!--
 Example:
