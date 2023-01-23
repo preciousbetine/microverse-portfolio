@@ -125,7 +125,7 @@ header {
 
 /* Intro section */
 #intro-section {
-  background-image: url(/images/header-bg.png);
+  background-image: url(images/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -368,7 +368,7 @@ h4 {
 
   /* Intro section */
   #intro-section {
-    background-image: url(/images/desktop-header-bg.png);
+    background-image: url(images/desktop-header-bg.png);
     background-size: cover;
     padding: 0 20%;
     border-bottom-left-radius: 120px;
