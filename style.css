@@ -255,6 +255,10 @@ header {
   gap: 12px;
 }
 
+#contact-form label {
+  width: 100%;
+}
+
 #contact-form input,
 #contact-form textarea {
   width: 100%;
