@@ -120,7 +120,7 @@ header {
 .stackbar-item {
   padding: 4px 12px;
   background: #ebebff;
-  color: #0011ff;
+  color: #01f;
   border-radius: 8px;
   float: left;
   height: max-content;
@@ -267,7 +267,7 @@ header {
 }
 
 /* General */
-h4 {
+h3 {
   font-size: 20px;
   font-weight: 500;
 }
@@ -300,9 +300,9 @@ h4 {
 
 .button-style-1 {
   width: max-content;
-  border: 1px solid #0011ff;
+  border: 1px solid #01f;
   border-radius: 8px;
-  color: #0011ff;
+  color: #01f;
   background-color: #fff;
   padding: 12px;
   font-size: 17px;
@@ -311,19 +311,19 @@ h4 {
 }
 
 .button-style-1:hover {
-  background-color: #0011ff;
+  background-color: #01f;
   color: #fff;
 }
 
 .button-style-2 {
-  color: #0011ff;
+  color: #01f;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid #0011ff;
+  border: 1px solid #01f;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   transition: 0.5s all;
 }
@@ -335,7 +335,7 @@ h4 {
 }
 
 .button-style-2:focus {
-  background: #0011ff;
+  background: #01f;
   color: #fff;
 }
 
@@ -370,7 +370,7 @@ h4 {
   }
 
   .nav-link:hover {
-    color: #0011ff;
+    color: #01f;
   }
 
   /* Intro section */
@@ -398,11 +398,11 @@ h4 {
   }
 
   .card:hover {
-    border-color: #0011ff;
+    border-color: #01f;
   }
 
   .card:hover .card-description > button {
-    background-color: #0011ff;
+    background-color: #01f;
     color: #fff;
   }
 
