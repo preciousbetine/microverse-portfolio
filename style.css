@@ -84,7 +84,7 @@ header {
   gap: 20px;
 }
 
-.card-description > h3 {
+.card-description > h2 {
   font-size: 32px;
 }
 
@@ -101,8 +101,7 @@ header {
 }
 
 .work-item-bar > ul {
-  color: gray;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   gap: 25px;
 }
@@ -117,7 +116,7 @@ header {
 .stackbar-item {
   padding: 4px 12px;
   background: #ebebff;
-  color: #6070ff;
+  color: #01f;
   border-radius: 8px;
   float: left;
   height: max-content;
@@ -235,7 +234,7 @@ header {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #e0dcdc;
+  color: #fff;
   transition: 0.5s all;
 }
 
@@ -251,6 +250,10 @@ header {
   gap: 12px;
 }
 
+#contact-form label {
+  width: 100%;
+}
+
 #contact-form input,
 #contact-form textarea {
   width: 100%;
@@ -260,13 +263,13 @@ header {
 }
 
 /* General */
-h4 {
+h3 {
   font-size: 20px;
   font-weight: 500;
 }
 
 .color-blue {
-  color: #6070ff;
+  color: #371fff;
 }
 
 .color-dark-blue {
@@ -293,9 +296,9 @@ h4 {
 
 .button-style-1 {
   width: max-content;
-  border: 1px solid #6070ff;
+  border: 1px solid #01f;
   border-radius: 8px;
-  color: #6070ff;
+  color: #01f;
   background-color: #fff;
   padding: 12px;
   font-size: 17px;
@@ -304,19 +307,19 @@ h4 {
 }
 
 .button-style-1:hover {
-  background-color: #6070ff;
+  background-color: #01f;
   color: #fff;
 }
 
 .button-style-2 {
-  color: #6070ff;
+  color: #01f;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid #6070ff;
+  border: 1px solid #01f;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   transition: 0.5s all;
 }
@@ -328,7 +331,7 @@ h4 {
 }
 
 .button-style-2:focus {
-  background: #2230d2;
+  background: #01f;
   color: #fff;
 }
 
@@ -337,6 +340,15 @@ h4 {
   align-items: center;
   gap: 20px;
   list-style: none;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* Desktop Version */
@@ -363,7 +375,7 @@ h4 {
   }
 
   .nav-link:hover {
-    color: #6070ff;
+    color: #01f;
   }
 
   /* Intro section */
@@ -391,11 +403,11 @@ h4 {
   }
 
   .card:hover {
-    border-color: #6070ff;
+    border-color: #01f;
   }
 
   .card:hover .card-description > button {
-    background-color: #6070ff;
+    background-color: #01f;
     color: #fff;
   }
 
@@ -410,7 +422,7 @@ h4 {
     gap: 15px;
   }
 
-  .card-description > h3 {
+  .card-description > h2 {
     font-size: 24px;
   }
 
@@ -460,6 +472,8 @@ h4 {
   }
 
   #contact-section p {
+    font-weight: bold;
+    font-size: 22px;
     width: 600px;
   }
 
