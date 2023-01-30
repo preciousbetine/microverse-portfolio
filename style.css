@@ -71,7 +71,7 @@ header {
 
 @keyframes rotate {
   from {
-    transform: rotate3d(0);
+    transform: rotate3d(0, 0, 0, 0deg);
   }
 
   to {
