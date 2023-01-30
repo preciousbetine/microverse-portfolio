@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Precious' Portfolio</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -15,12 +16,22 @@
       My Logo
     </a>
     <nav>
-      <span id="menu" class="material-symbols-outlined color-blue">
-        menu
-      </span>
+      <button id="showMobileMenuBtn">
+        <span id="menu" class="material-symbols-outlined color-blue">
+          menu
+        </span>
+      </button>
       <a href="#work-section" class="nav-link">Portfolio</a>
       <a href="#about-section" class="nav-link">About</a>
       <a href="#contact-section" class="nav-link">Contact</a>
+      <div id="mobileMenu">
+        <span id="closeButton" class="material-symbols-outlined color-blue">
+          close
+        </span>
+        <a href="#work-section" class="nav-link-mobile">Portfolio</a>
+        <a href="#about-section" class="nav-link-mobile">About</a>
+        <a href="#contact-section" class="nav-link-mobile">Contact</a>
+      </div>
     </nav>
   </header>
   <section id="intro-section">

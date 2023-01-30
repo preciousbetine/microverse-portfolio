@@ -36,9 +36,42 @@ header {
   animation: 2s rotate;
 }
 
+#mobileMenu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  gap: 35px;
+  padding: 40px 20px;
+  background-color: rgba(96, 112, 255, 0.9);
+}
+
+#showMobileMenuBtn {
+  background: none;
+  border: none;
+}
+
+.nav-link-mobile {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+#closeButton {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 30px;
+}
+
 @keyframes rotate {
   from {
-    transform: rotate3d(0);
+    transform: rotate3d(0, 0, 0, 0deg);
   }
 
   to {

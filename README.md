@@ -47,6 +47,7 @@
   <ul>
     <li>HTML</li>
     <li>CSS</li>
+    <li>Javascript</li>
   </ul>
 </details>
 
@@ -188,6 +189,12 @@ Example:
 👤 **Chawki Mbarki**
 
 - GitHub: [@chawkimbarki](https://github.com/chawkimbarki)
+<!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
+
+👤 **Vangelis**
+
+- GitHub: [@chawkimbarki](https://github.com/vangelif)
 <!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
