@@ -36,6 +36,15 @@ header {
   animation: 2s rotate;
 }
 
+#mobileMenu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
 @keyframes rotate {
   from {
     transform: rotate3d(0);
