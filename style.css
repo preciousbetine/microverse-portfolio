@@ -42,7 +42,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
   display: none;
   flex-direction: column;
   gap: 35px;
