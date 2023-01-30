@@ -1,7 +1,6 @@
-
-const menuButton = document.querySelector('#showMobileMenu');
+const menuButton = document.querySelector('#showMobileMenuBtn');
 const mobileMenu = document.querySelector('#mobileMenu');
-const closeButton = document.querySelector('.xbtn');
+const closeButton = document.querySelector('#closeButton');
 const navLinksMobile = document.querySelectorAll('.nav-link-mobile');
 
 menuButton.addEventListener('click', () => {
