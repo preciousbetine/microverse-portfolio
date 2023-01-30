@@ -43,7 +43,7 @@ header {
   top: 0;
   left: 0;
   background-color: white;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 35px;
   padding: 50px;
