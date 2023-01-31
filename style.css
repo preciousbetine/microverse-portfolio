@@ -89,6 +89,23 @@ header {
   background-color: #e5e5e5;
 }
 
+.card-menu {
+  background-color: white;
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-menu > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+}
+
 .card {
   background-color: white;
   border: 1px solid #dfe1e6;

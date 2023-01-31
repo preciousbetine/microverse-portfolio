@@ -126,4 +126,4 @@ portfolioItems.forEach((item) => {
   portfolioSection += portfolioItem;
 });
 
-workSection.innerHTML = portfolioSection;
+workSection.innerHTML += portfolioSection;
