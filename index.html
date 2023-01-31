@@ -7,6 +7,7 @@
   <link rel="icon" type="image/x-icon" href="images/github.svg">
   <link rel="stylesheet" href="style.css">
   <title>Precious' Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script defer src="script.js"></script>
 </head>
@@ -78,24 +79,39 @@
     </ul>
   </section>
   <section id="work-section">
-    <div class="card-menu">
-      <h2>Tonic</h2>
-      <ul>
-        <li><strong>CANOPY</strong></li>
-        <li>Back End Dev</li>
-        <li>2015</li>
-      </ul>
-        <img src="images/work-image-5.png">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent  
-        </p>
+    <div id="popup-menu-container">
+      <div id="popup-menu">
+        <div id="popup-menu-header">
+          <h2>Tonic</h2>
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </div>
         <ul>
-          <li>html</li>
-          <li>css</li>
-          <li>javascript</li>       
+          <li><strong>CANOPY</strong></li>
+          <li>Back End Dev</li>
+          <li>2015</li>
         </ul>
-        <hr>
-        <button>See Live</button>
-        <button>See Source</button>
+          <img src="images/work-image-5.png">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent  
+          </p>
+          <ul class="stackbar">
+            <li class="stackbar-item">html</li>
+            <li class="stackbar-item">css</li>
+            <li class="stackbar-item">js</li>
+          </ul>
+          <hr>
+          <div id="popup-buttons">
+            <button class="button-style-1">
+              See Live
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+            <button class="button-style-1">
+              See Source
+              <i class="fa-brands fa-github"></i>
+            </button>
+          </div>
+      </div>
     </div>
   </section>
   <section id="about-section">
