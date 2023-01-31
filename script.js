@@ -31,10 +31,10 @@ const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const navItem = navLinksDesktop[sections.indexOf(entry.target.id)];
     if (entry.isIntersecting) {
+      navLinksDesktop.forEach((item) => item.classList.remove('active'));
       if (entry.target.id === 'intro-section') {
         header.style.height = '100px';
       } else {
-        navLinksDesktop.forEach((item) => item.classList.remove('active'));
         navItem.classList.add('active');
         header.style.height = '80px';
       }
