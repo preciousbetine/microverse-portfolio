@@ -194,7 +194,7 @@ Example:
 
 👤 **Vangelis**
 
-- GitHub: [@chawkimbarki](https://github.com/vangelif)
+- GitHub: [@vangelif](https://github.com/vangelif)
 <!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
