@@ -431,7 +431,7 @@ h3 {
 }
 
 #popup-menu > ul > li:first-child {
-  list-style: none
+  list-style: none;
 }
 
 #popup-menu img {
