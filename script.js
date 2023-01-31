@@ -55,7 +55,7 @@ const portfolioItems = [
   {
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: '',
+    featuredImage: 'images/work-image-5.png',
     technologies: ['html', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -66,7 +66,7 @@ const portfolioItems = [
   {
     name: 'Multi-Post Stories',
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    featuredImage: '',
+    featuredImage: 'images/work-image-4.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -77,7 +77,7 @@ const portfolioItems = [
   {
     name: 'Facebook 360',
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    featuredImage: '',
+    featuredImage: 'images/work-image-1.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -88,7 +88,7 @@ const portfolioItems = [
   {
     name: 'Uber Navigation',
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    featuredImage: '',
+    featuredImage: 'images/work-image-6.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -97,3 +97,33 @@ const portfolioItems = [
     year: '2018',
   },
 ];
+
+let portfolioSection = '';
+portfolioItems.forEach((item) => {
+  let technologies = '';
+  item.technologies.forEach((tech) => {
+    technologies += `<li class="stackbar-item">${tech}</li>`;
+  })
+  const portfolioItem = `
+    <div class="card">
+      <img src="${item.featuredImage}" alt="Tonic" />
+      <div class="card-description">
+        <h2>${item.name}</h2>
+        <div class="work-item-bar">
+          <span>${item.category}</span>
+          <ul>
+            <li>${item.stack}</li>
+            <li>${item.year}</li>
+          </ul>
+        </div>
+        <p class="color-dark">${item.description}</p>
+        <ul class="stackbar">
+          ${technologies}
+        </ul>
+        <button class="button-style-1">See Project</button>
+      </div>
+    </div>`;
+  portfolioSection += portfolioItem;
+});
+
+workSection.innerHTML = portfolioSection;
