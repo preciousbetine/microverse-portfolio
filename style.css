@@ -159,9 +159,10 @@ header {
 /* Popup Menu */
 
 #popup-menu-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  display: flex;
+  overflow-y: auto;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
@@ -191,18 +192,33 @@ header {
   gap: 25px;
 }
 
+#popup-menu .stackbar {
+  gap: 10px;
+}
+
+#close-popup-menu {
+  cursor: pointer;
+}
+
 #popup-menu > ul > li:first-child {
   list-style: none
 }
 
 #popup-menu img {
   width: 100%;
+  border-radius: 15px;
 }
 
 #popup-menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#popup-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #popup-buttons {
@@ -606,5 +622,39 @@ h3 {
   .button-style-1 {
     font-size: 14px;
     padding: 7px 10px;
+  }
+
+  /* Popup Menu */
+  #popup-menu-container {
+    align-items: flex-start;
+  }
+
+  #popup-menu {
+    width: 600px;
+  }
+
+  #popup-menu img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  #popup-menu hr {
+    display: none;
+  }
+  
+  #popup-menu-footer {
+    flex-direction: row;
+  }
+
+  #popup-menu-footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+  }
+
+  #popup-buttons > button {
+    width: 150px;
   }
 }
