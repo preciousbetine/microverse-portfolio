@@ -262,7 +262,7 @@ header {
   color: #fff;
 }
 
-#contact-section p {
+#contact-section > p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -272,7 +272,7 @@ header {
   transition: 0.5s all;
 }
 
-#contact-section p:hover {
+#contact-section > p:hover {
   transform: translateX(10px);
 }
 
