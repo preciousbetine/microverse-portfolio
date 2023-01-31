@@ -142,17 +142,19 @@ const renderPortfolioMenu = (e, curIndex) => {
 
   popupMenuContainer.innerHTML = `
   <div id="popup-menu">
-    <div id="popup-menu-header">
-      <h2>${portfolioItem.name}</h2>
-      <span class="material-symbols-outlined" id="close-popup-menu">
-        close
-      </span>
+    <div>
+      <div id="popup-menu-header">
+        <h2>${portfolioItem.name}</h2>
+        <span class="material-symbols-outlined" id="close-popup-menu" title="Close popup">
+          close
+        </span>
+      </div>
+      <ul>
+        <li><strong>${portfolioItem.category}</strong></li>
+        <li>${portfolioItem.stack}</li>
+        <li>${portfolioItem.year}</li>
+      </ul>
     </div>
-    <ul>
-      <li><strong>${portfolioItem.category}</strong></li>
-      <li>${portfolioItem.stack}</li>
-      <li>${portfolioItem.year}</li>
-    </ul>
     <img src="${portfolioItem.featuredImage}">
     <div id="popup-menu-footer">
       <p>${portfolioItem.description}</p>

@@ -413,13 +413,14 @@ h3 {
 }
 
 #popup-menu h2 {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 #popup-menu ul {
   display: flex;
   align-items: center;
   gap: 25px;
+  font-size: 12px;
 }
 
 #popup-menu .stackbar {
@@ -428,9 +429,14 @@ h3 {
 
 #close-popup-menu {
   cursor: pointer;
+  transition: all 0.5s;
 }
 
-#popup-menu > ul > li:first-child {
+#close-popup-menu:hover {
+  transform: scale(1.2);
+}
+
+#popup-menu > div > ul > li:first-child {
   list-style: none;
 }
 
@@ -451,6 +457,10 @@ h3 {
   gap: 20px;
 }
 
+#popup-menu-footer p {
+  font-size: 12px;
+}
+
 #popup-menu-footer-right hr {
   margin: 20px 0 10px 0;
 }
@@ -466,6 +476,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-size: 12px;
 }
 
 #navigateProject {
@@ -638,7 +649,7 @@ h3 {
   }
 
   #popup-menu {
-    width: 600px;
+    width: 500px;
   }
 
   #popup-menu img {
