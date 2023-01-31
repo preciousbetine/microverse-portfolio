@@ -203,12 +203,12 @@ const renderPortfolioMenu = (e, curIndex) => {
   }
 
   nextProjectBtn.addEventListener('click', () => {
-    currentIndex++;
+    currentIndex += 1;
     renderPortfolioMenu(e, currentIndex);
   });
 
   previousProjectBtn.addEventListener('click', () => {
-    currentIndex--;
+    currentIndex -= 1;
     renderPortfolioMenu(e, currentIndex);
   });
 };
