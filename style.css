@@ -451,6 +451,10 @@ h3 {
   gap: 20px;
 }
 
+#popup-menu-footer-right hr {
+  margin: 20px 0 10px 0;
+}
+
 #popup-buttons {
   display: flex;
   gap: 20px;
