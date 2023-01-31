@@ -468,6 +468,10 @@ h3 {
   gap: 10px;
 }
 
+#navigateProject {
+  display: none;
+}
+
 /* Desktop Version */
 
 @media (min-width: 768px) {
@@ -660,5 +664,32 @@ h3 {
 
   #popup-buttons > button {
     width: 150px;
+  }
+  
+  #navigateProject {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  #navigateProject button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #navigateProject button:hover {
+    color: #6070ff;
+  }
+
+  #navigateProject button:disabled {
+    color: gray;
+  }
+
+  #navigateProject button:disabled:hover {
+    color: gray;
   }
 }

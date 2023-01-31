@@ -131,54 +131,88 @@ workSection.innerHTML += portfolioSection;
 // POPUP MENU
 const seeProjectButtons = document.querySelectorAll('.see-project-button');
 const popupMenuContainer = document.querySelector('#popup-menu-container');
-seeProjectButtons.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
-    const buttonIndex = Number(e.target.id.split('-')[2]);
-    const portfolioItem = portfolioItems[buttonIndex];
 
-    let technologies = '';
-    portfolioItem.technologies.forEach((tech) => {
-      technologies += `<li class="stackbar-item">${tech}</li>`;
-    });
+const renderPortfolioMenu = (e, curIndex) => {
+  let currentIndex = curIndex || Number(e.target.id.split('-')[2]);
+  const portfolioItem = portfolioItems[currentIndex];
+  let technologies = '';
+  portfolioItem.technologies.forEach((tech) => {
+    technologies += `<li class="stackbar-item">${tech}</li>`;
+  });
 
-    popupMenuContainer.innerHTML = `
-    <div id="popup-menu">
-      <div id="popup-menu-header">
-        <h2>${portfolioItem.name}</h2>
-        <span class="material-symbols-outlined" id="close-popup-menu">
-          close
-        </span>
-      </div>
-      <ul>
-        <li><strong>${portfolioItem.category}</strong></li>
-        <li>${portfolioItem.stack}</li>
-        <li>${portfolioItem.year}</li>
-      </ul>
-      <img src="${portfolioItem.featuredImage}">
-      <div id="popup-menu-footer">
-        <p>${portfolioItem.description}</p>
-        <div id="popup-menu-footer-right">
-          <ul class="stackbar">
-            ${technologies}
-          </ul>
-          <hr>
-          <div id="popup-buttons">
-            <button class="button-style-1">
-              See Live
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-            <button class="button-style-1">
-              See Source
-              <i class="fa-brands fa-github"></i>
-            </button>
-          </div>
+  popupMenuContainer.innerHTML = `
+  <div id="popup-menu">
+    <div id="popup-menu-header">
+      <h2>${portfolioItem.name}</h2>
+      <span class="material-symbols-outlined" id="close-popup-menu">
+        close
+      </span>
+    </div>
+    <ul>
+      <li><strong>${portfolioItem.category}</strong></li>
+      <li>${portfolioItem.stack}</li>
+      <li>${portfolioItem.year}</li>
+    </ul>
+    <img src="${portfolioItem.featuredImage}">
+    <div id="popup-menu-footer">
+      <p>${portfolioItem.description}</p>
+      <div id="popup-menu-footer-right">
+        <ul class="stackbar">
+          ${technologies}
+        </ul>
+        <hr>
+        <div id="popup-buttons">
+          <button class="button-style-1">
+            See Live
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+          <button class="button-style-1">
+            See Source
+            <i class="fa-brands fa-github"></i>
+          </button>
         </div>
       </div>
-    </div>`;
+    </div>
+    <div id="navigateProject">
+      <button id="previousProjectBtn">
+        <i class="fa fa-arrow-left"></i>
+        Previous project
+      </button>
+      <button id="nextProjectBtn">
+        Next project
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>`;
 
-    popupMenuContainer.style.display = 'flex';
-    document.querySelector('#close-popup-menu').addEventListener('click', () => {
-      popupMenuContainer.style.display = 'none';
-    });
+  popupMenuContainer.style.display = 'flex';
+  document.querySelector('#close-popup-menu').addEventListener('click', () => {
+    popupMenuContainer.style.display = 'none';
+  });
+
+  const nextProjectBtn = document.querySelector('#nextProjectBtn');
+  const previousProjectBtn = document.querySelector('#previousProjectBtn');
+
+  if (currentIndex === portfolioItems.length - 1) {
+    nextProjectBtn.disabled = true;
+  }
+  if (currentIndex === 0) {
+    previousProjectBtn.disabled = true;
+  }
+
+  nextProjectBtn.addEventListener('click', () => {
+    currentIndex++;
+    renderPortfolioMenu(e, currentIndex);
+  });
+
+  previousProjectBtn.addEventListener('click', () => {
+    currentIndex--;
+    renderPortfolioMenu(e, currentIndex);
+  });
+};
+
+seeProjectButtons.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    renderPortfolioMenu(e);
   });
 });
