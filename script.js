@@ -103,7 +103,7 @@ portfolioItems.forEach((item, index) => {
   let technologies = '';
   item.technologies.forEach((tech) => {
     technologies += `<li class="stackbar-item">${tech}</li>`;
-  })
+  });
   const portfolioItem = `
     <div class="card">
       <img src="${item.featuredImage}" alt="Tonic" />
@@ -130,16 +130,16 @@ workSection.innerHTML += portfolioSection;
 
 // POPUP MENU
 const seeProjectButtons = document.querySelectorAll('.see-project-button');
-const popupMenuContainer = document.querySelector('#popup-menu-container')
+const popupMenuContainer = document.querySelector('#popup-menu-container');
 seeProjectButtons.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     const buttonIndex = Number(e.target.id.split('-')[2]);
     const portfolioItem = portfolioItems[buttonIndex];
-    
+
     let technologies = '';
     portfolioItem.technologies.forEach((tech) => {
       technologies += `<li class="stackbar-item">${tech}</li>`;
-    })
+    });
 
     popupMenuContainer.innerHTML = `
     <div id="popup-menu">
@@ -180,5 +180,5 @@ seeProjectButtons.forEach((btn) => {
     document.querySelector('#close-popup-menu').addEventListener('click', () => {
       popupMenuContainer.style.display = 'none';
     });
-  })
+  });
 });
