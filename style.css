@@ -240,6 +240,103 @@ header {
   border-bottom: 1px solid #def1e6;
 }
 
+/* Popup Menu */
+
+#popup-menu-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px;
+}
+
+#popup-menu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#popup-menu h2 {
+  font-size: 22px;
+}
+
+#popup-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 12px;
+}
+
+#popup-menu .stackbar {
+  gap: 10px;
+}
+
+#close-popup-menu {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#close-popup-menu:hover {
+  transform: scale(1.2);
+}
+
+#popup-menu > div > ul > li:first-child {
+  list-style: none;
+}
+
+#popup-menu img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#popup-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#popup-menu-footer > p {
+  font-size: 12px;
+}
+
+#popup-menu-footer-right hr {
+  margin: 20px 0 10px 0;
+}
+
+#popup-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+#popup-buttons > button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+#navigateProject {
+  display: none;
+}
+
 /* Contact Section */
 #contact-section {
   background-color: #6070ff;
@@ -384,103 +481,6 @@ h3 {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-/* Popup Menu */
-
-#popup-menu-container {
-  width: 100vw;
-  height: 100vh;
-  overflow-y: auto;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  padding: 20px;
-}
-
-#popup-menu {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#popup-menu h2 {
-  font-size: 22px;
-}
-
-#popup-menu ul {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  font-size: 12px;
-}
-
-#popup-menu .stackbar {
-  gap: 10px;
-}
-
-#close-popup-menu {
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-#close-popup-menu:hover {
-  transform: scale(1.2);
-}
-
-#popup-menu > div > ul > li:first-child {
-  list-style: none;
-}
-
-#popup-menu img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-#popup-menu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#popup-menu-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#popup-menu-footer > p {
-  font-size: 12px;
-}
-
-#popup-menu-footer-right hr {
-  margin: 20px 0 10px 0;
-}
-
-#popup-buttons {
-  display: flex;
-  gap: 20px;
-}
-
-#popup-buttons > button {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 12px;
-}
-
-#navigateProject {
-  display: none;
 }
 
 /* Desktop Version */
