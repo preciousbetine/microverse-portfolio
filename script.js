@@ -221,15 +221,15 @@ seeProjectButtons.forEach((btn) => {
 
 const contactForm = document.forms['contact-form'];
 const errorMessage = document.querySelector('.error-message');
- 
+
 contactForm.addEventListener('submit', (e) => {
-  const email = contactForm['email'].value;
+  const email = contactForm.email.value;
   if (email !== email.toLowerCase()) {
     errorMessage.style.display = 'block';
-    contactForm['email'].focus();
+    contactForm.email.focus();
     e.preventDefault();
     e.stopPropagation();
   } else {
     errorMessage.style.display = 'none';
   }
-})
+});
