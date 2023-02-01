@@ -394,10 +394,18 @@ header {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+#contact-form > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .error-message {
-  color: red;
-  font-size: 15px;
-  width: max-content;
+  background-color: rgb(195, 36, 36);
+  color: white;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 4px;
   display: none;
 }
 
@@ -642,6 +650,10 @@ h3 {
   #contact-form {
     width: 500px;
     align-items: center;
+  }
+  
+  #contact-form > div {
+    width: 500px;
   }
 
   /* Components and Buttons */
