@@ -394,6 +394,13 @@ header {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+.error-message {
+  color: red;
+  font-size: 15px;
+  width: max-content;
+  display: none;
+}
+
 /* General */
 h3 {
   font-size: 20px;

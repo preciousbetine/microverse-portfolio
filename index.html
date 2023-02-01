@@ -168,14 +168,17 @@
       a feature that you need built or a project that needs coding.
       I&apos;d love to help with it
     </p>
-    <form action="https://formspree.io/f/mayznopw" method="POST" id="contact-form">
+    <form action="https://formspree.io/f/mayznopw" method="POST" id="contact-form" name="contact-form">
       <label for="name" class="sr-only">Name</label>
       <input type="text" placeholder="Name" id="name" name="name" maxlength="30" required>
       <label for="email" class="sr-only">Email</label>
       <input type="email" placeholder="Email" id="email" name="email" required>
       <label for="message" class="sr-only">Message</label>
       <textarea placeholder="Message" id="message" name="message" rows="10" maxlength="500" required></textarea>
-      <button class="button-style-2" type="submit">Get In Touch</button>
+      <div>
+        <button class="button-style-2" type="submit">Get In Touch</button>
+        <p class="error-message">Email should be in lowercase.</p>
+      </div>
     </form>
   </section>
 </body>
