@@ -233,3 +233,16 @@ contactForm.addEventListener('submit', (e) => {
     errorMessage.style.display = 'none';
   }
 });
+
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+
+contactForm.addEventListener('input', () => {
+  const contactInfo = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  localStorage.setItem('user-data', JSON.stringify(contactInfo));
+});
