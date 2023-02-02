@@ -233,3 +233,18 @@ contactForm.addEventListener('submit', (e) => {
     errorMessage.style.display = 'none';
   }
 });
+
+contactForm.addEventListener('input', () => {
+  const contactInfo = {
+    username: contactForm.elements.name.value,
+    email: contactForm.elements.email.value,
+    message: contactForm.elements.message.value,
+  };
+  localStorage.setItem('user-data', JSON.stringify(contactInfo));
+});
+
+const { username, email, message } = JSON.parse(localStorage.getItem('user-data'));
+
+contactForm.elements.name.value = username;
+contactForm.elements.email.value = email;
+contactForm.elements.message.value = message;
