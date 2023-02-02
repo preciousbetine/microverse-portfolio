@@ -234,21 +234,17 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 
-const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
-const messageInput = document.querySelector('#message');
-
 contactForm.addEventListener('input', () => {
   const contactInfo = {
-    name: nameInput.value,
-    email: emailInput.value,
-    message: messageInput.value,
+    username: contactForm.elements.name.value,
+    email: contactForm.elements.email.value,
+    message: contactForm.elements.message.value,
   };
   localStorage.setItem('user-data', JSON.stringify(contactInfo));
 });
 
-const getDataFromLocalStorage = JSON.parse(localStorage.getItem('user-data'));
+const { username, email, message } = JSON.parse(localStorage.getItem('user-data'));
 
-nameInput.value = getDataFromLocalStorage.name;
-emailInput.value = getDataFromLocalStorage.email;
-messageInput.value = getDataFromLocalStorage.message;
+contactForm.elements.name.value = username;
+contactForm.elements.email.value = email;
+contactForm.elements.message.value = message;
