@@ -246,3 +246,9 @@ contactForm.addEventListener('input', () => {
   };
   localStorage.setItem('user-data', JSON.stringify(contactInfo));
 });
+
+const getDataFromLocalStorage = JSON.parse(localStorage.getItem('user-data'));
+
+nameInput.value = getDataFromLocalStorage.name;
+emailInput.value = getDataFromLocalStorage.email;
+messageInput.value = getDataFromLocalStorage.message;
