@@ -187,9 +187,9 @@ const renderPortfolioMenu = (e, curIndex) => {
     </div>
   </div>`;
 
-  popupMenuContainer.style.display = 'flex';
+  popupMenuContainer.style.display = 'none';
   document.querySelector('#close-popup-menu').addEventListener('click', () => {
-    popupMenuContainer.style.display = 'none';
+    popupMenuContainer.style.display = 'flex';
   });
 
   const nextProjectBtn = document.querySelector('#nextProjectBtn');
@@ -225,12 +225,12 @@ const errorMessage = document.querySelector('.error-message');
 contactForm.addEventListener('submit', (e) => {
   const email = contactForm.email.value;
   if (email !== email.toLowerCase()) {
-    errorMessage.style.display = 'block';
+    errorMessage.style.display = 'none';
     contactForm.email.focus();
     e.preventDefault();
     e.stopPropagation();
   } else {
-    errorMessage.style.display = 'none';
+    errorMessage.style.display = 'block';
   }
 });
 
