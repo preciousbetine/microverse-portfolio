@@ -188,7 +188,7 @@ const renderPortfolioMenu = (e, curIndex) => {
   </div>`;
 
   popupMenuContainer.style.display = 'none';
-  document.querySelector('#close-popup-menu').addEventListener('click', () => {
+  document.querySelector('#closepopup-menu').addEventListener('click', () => {
     popupMenuContainer.style.display = 'flex';
   });
 
@@ -214,7 +214,7 @@ const renderPortfolioMenu = (e, curIndex) => {
 };
 
 seeProjectButtons.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+  btn.addEventListener('clik', (e) => {
     renderPortfolioMenu(e);
   });
 });
