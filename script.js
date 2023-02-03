@@ -187,9 +187,9 @@ const renderPortfolioMenu = (e, curIndex) => {
     </div>
   </div>`;
 
-  popupMenuContainer.style.display = 'none';
-  document.querySelector('#closepopup-menu').addEventListener('click', () => {
-    popupMenuContainer.style.display = 'flex';
+  popupMenuContainer.style.display = 'flex';
+  document.querySelector('#close-popup-menu').addEventListener('click', () => {
+    popupMenuContainer.style.display = 'none';
   });
 
   const nextProjectBtn = document.querySelector('#nextProjectBtn');
@@ -214,7 +214,7 @@ const renderPortfolioMenu = (e, curIndex) => {
 };
 
 seeProjectButtons.forEach((btn) => {
-  btn.addEventListener('clik', (e) => {
+  btn.addEventListener('click', (e) => {
     renderPortfolioMenu(e);
   });
 });
@@ -225,12 +225,12 @@ const errorMessage = document.querySelector('.error-message');
 contactForm.addEventListener('submit', (e) => {
   const email = contactForm.email.value;
   if (email !== email.toLowerCase()) {
-    errorMessage.style.display = 'none';
+    errorMessage.style.display = 'block';
     contactForm.email.focus();
     e.preventDefault();
     e.stopPropagation();
   } else {
-    errorMessage.style.display = 'block';
+    errorMessage.style.display = 'none';
   }
 });
 
