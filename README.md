@@ -36,7 +36,7 @@
 
 # Microverse Portfolio Project <a name="about-project"></a>
 
-> A simple web portfolio built from one of Microverse's templates.
+A simple portfolio website built from one of Microverse's templates.
 
 ## 🛠 Built With <a name="built-with"></a>
 
