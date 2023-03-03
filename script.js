@@ -106,7 +106,7 @@ const portfolioItems = [
     category: 'Microverse',
     stack: 'Full Stack Dev',
     year: '2023',
-  }
+  },
 ];
 
 let portfolioSection = '';
@@ -175,13 +175,13 @@ const renderPortfolioMenu = (e, curIndex) => {
         </ul>
         <hr>
         <div id="popup-buttons">
-          <a href="${portfolioItem.liveLink.length === 0 ? '#' : portfolioItem.liveLink}" target=${portfolioItem.liveLink.length === 0 ? '' : "_blank"}>
+          <a href="${portfolioItem.liveLink.length === 0 ? '#' : portfolioItem.liveLink}" target=${portfolioItem.liveLink.length === 0 ? '' : '_blank'}>
             <button class="button-style-1">
               See Live
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </button>
           </a>
-          <a href="${portfolioItem.sourceLink.length === 0 ? '#' : portfolioItem.sourceLink}" target=${portfolioItem.sourceLink.length === 0 ? '' : "_blank"}>
+          <a href="${portfolioItem.sourceLink.length === 0 ? '#' : portfolioItem.sourceLink}" target=${portfolioItem.sourceLink.length === 0 ? '' : '_blank'}>
             <button class="button-style-1">
               See Source
               <i class="fa-brands fa-github"></i>
