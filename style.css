@@ -324,8 +324,12 @@ header {
   gap: 20px;
 }
 
-#popup-buttons > button {
+#popup-buttons > a {
   width: 50%;
+  text-decoration: none;
+}
+
+#popup-buttons > a > button {
   display: flex;
   align-items: center;
   justify-content: center;

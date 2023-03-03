@@ -96,6 +96,17 @@ const portfolioItems = [
     stack: 'Lead Developer',
     year: '2018',
   },
+  {
+    name: 'Emerging Technologies',
+    description: 'Conference page for the Emerging Technologies group. This page was created to showcase the technologies that are currently trending in the tech industry.',
+    featuredImage: 'images/et-project-screenshot.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveLink: 'http://preciousbetine.github.io/microverse-html-css-js-capstone/',
+    sourceLink: 'https://github.com/preciousbetine/microverse-html-css-js-capstone',
+    category: 'Microverse',
+    stack: 'Full Stack Dev',
+    year: '2023',
+  },
 ];
 
 let portfolioSection = '';
@@ -164,14 +175,18 @@ const renderPortfolioMenu = (e, curIndex) => {
         </ul>
         <hr>
         <div id="popup-buttons">
-          <button class="button-style-1">
-            See Live
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-          <button class="button-style-1">
-            See Source
-            <i class="fa-brands fa-github"></i>
-          </button>
+          <a href="${portfolioItem.liveLink.length === 0 ? '#' : portfolioItem.liveLink}" target=${portfolioItem.liveLink.length === 0 ? '' : '_blank'}>
+            <button class="button-style-1">
+              See Live
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </a>
+          <a href="${portfolioItem.sourceLink.length === 0 ? '#' : portfolioItem.sourceLink}" target=${portfolioItem.sourceLink.length === 0 ? '' : '_blank'}>
+            <button class="button-style-1">
+              See Source
+              <i class="fa-brands fa-github"></i>
+            </button>
+          </a>
         </div>
       </div>
     </div>
